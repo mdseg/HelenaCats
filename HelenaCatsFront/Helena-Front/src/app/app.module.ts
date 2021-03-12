@@ -16,6 +16,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { ProductoService } from './service/producto.service.ts.service';
+import { NgxFileDropModule} from 'ngx-file-drop';
+import { FileUploadComponent } from './file-upload/file-upload.component';
 
 
 @NgModule({
@@ -27,7 +29,8 @@ import { ProductoService } from './service/producto.service.ts.service';
     HeaderComponent,
     HomeComponent,
     IngresoProductoComponent,
-    ModificarProductoComponent
+    ModificarProductoComponent,
+    FileUploadComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import { ProductoService } from './service/producto.service.ts.service';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxFileDropModule
 
 
     

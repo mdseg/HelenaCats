@@ -12,17 +12,28 @@ public class Producto {
     private int profundidad;
     private float precio;
     private String detalles;
+    @Column(name="imagen_principal")
+    private String imagenPrincipal;
 
     public Producto() {
     }
 
-    public Producto(String nombre, int alto, int ancho, int profundidad, float precio, String detalles) {
+    public Producto(String nombre, int alto, int ancho, int profundidad, float precio, String detalles, String imagenPrincipal) {
         this.nombre = nombre;
         this.alto = alto;
         this.ancho = ancho;
         this.profundidad = profundidad;
         this.precio = precio;
         this.detalles = detalles;
+        this.imagenPrincipal = imagenPrincipal;
+    }
+
+    public String getImagenPrincipal() {
+        return imagenPrincipal;
+    }
+
+    public void setImagenPrincipal(String imagenPrincipal) {
+        this.imagenPrincipal = imagenPrincipal;
     }
 
     public int getIdProducto() {
@@ -83,8 +94,10 @@ public class Producto {
 
     @Override
     public String toString() {
-        return "Producto{" + "idProducto=" + idProducto + ", nombre=" + nombre + ", alto=" + alto + ", ancho=" + ancho + ", profundidad=" + profundidad + ", precio=" + precio + ", detalles=" + detalles + '}';
+        return "Producto{" + "idProducto=" + idProducto + ", nombre=" + nombre + ", alto=" + alto + ", ancho=" + ancho + ", profundidad=" + profundidad + ", precio=" + precio + ", detalles=" + detalles + ", imagenPrincipal=" + imagenPrincipal + '}';
     }
+
+
     
     
     

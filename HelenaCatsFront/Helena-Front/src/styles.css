@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+.pastel-main
+{
+    background: rgb(255,218,193);
+    background: linear-gradient(90deg, rgba(255,218,193,1) 0%, rgba(227,199,218,1) 50%, rgba(197,235,254,1) 100%);
+
+}
+
+body
+{
+    /*background-color: #F7EBEC;*/
+}
+
+.btn-pink
+{
+    background-color:rgb(232,208,230);
+    color:black;
+}

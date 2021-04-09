@@ -1,0 +1,113 @@
+<div class="container mt-5">
+ 
+  <div class="row justify-content-center vh-100 align-items-start">
+    <div class="col-sm-4">
+      <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group mt-5">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            name="nombre"
+            [(ngModel)]="nombre"
+            required
+          />
+        </div>
+
+        <div class="form-group mt-2">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            [(ngModel)]="email"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <label for="nombre">Teléfono</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="telefono"
+            name="telefono"
+            [(ngModel)]="telefono"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <label for="nombre">Mensaje</label>
+          <textarea
+            class="form-control"
+            id="mensaje"
+            name="mensaje"
+            rows="3"
+            [(ngModel)]="mensaje"
+            required
+          ></textarea>
+        </div>
+        <div class="d-grid gap-2 mt-2">
+            <button
+            class="btn btn-pink"
+            [disabled]="!f.valid"
+          >
+            Enviar mensaje
+          </button>
+          </div>
+      </form>
+    </div>
+  </div>
+  
+  <!--
+      <div class="card card-body bg-danger text-white py-5">
+        <h2>Contacto</h2>
+        <p class="lead">
+          Puede contactarme mediante este formulario.
+        </p>
+      </div>
+      <div class="card-card-body py-5">
+        <div class="col-sm-12 offset-md-3 col-md-6">
+          <form>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-danger text-white">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input type="text" class="form-control border bg-dark text-white" placeholder="Ingresa tu nombre">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-danger text-white">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                </div>
+                <input type="email" class="form-control border bg-dark text-white" placeholder="Ingresa tu email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="input-group input-group-lg">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-danger text-white">
+                    <i class="fas fa-pencil-alt"></i>
+                  </span>
+                </div>
+                <textarea class="form-control bg-dark text-white border" placeholder="Mensaje"></textarea>
+              </div>
+              <button type="submit" class="btn-danger btn-block btn-lg mt-3">
+                <i class="fas fa-arrow-circle-right"></i>Enviar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+     
+    </div>
+  -->
+

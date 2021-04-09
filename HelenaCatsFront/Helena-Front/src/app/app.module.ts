@@ -10,6 +10,8 @@ import { HeaderComponent } from './layout/header/header.component';
 import { HomeComponent } from './layout/home/home.component';
 import { IngresoProductoComponent } from './layout/ingreso-producto/ingreso-producto.component';
 import { ModificarProductoComponent } from './layout/modificar-producto/modificar-producto.component';
+import { ContactoComponent } from './layout/contacto/contacto.component';
+
 
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -30,7 +32,8 @@ import { FileUploadComponent } from './file-upload/file-upload.component';
     HomeComponent,
     IngresoProductoComponent,
     ModificarProductoComponent,
-    FileUploadComponent
+    FileUploadComponent,
+    ContactoComponent
   ],
   imports: [
     BrowserModule,

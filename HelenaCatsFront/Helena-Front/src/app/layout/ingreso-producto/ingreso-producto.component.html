@@ -1,3 +1,127 @@
+<div class="container mt-5">
+  <div class="row justify-content-center vh-100 align-items-start">
+    <div class="col-sm-4">
+      <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div class="form-group mt-5">
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            name="nombre"
+            [(ngModel)]="nombre"
+            required
+          />
+        </div>
+
+        <div class="form-group mt-2">
+          <label for="nombre">Alto</label>
+          <input
+            type="text"
+            class="form-control"
+            id="alto"
+            name="alto"
+            [(ngModel)]="alto"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <label for="nombre">Ancho</label>
+          <input
+            type="text"
+            class="form-control"
+            id="ancho"
+            name="ancho"
+            [(ngModel)]="ancho"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <label for="nombre">Profundidad</label>
+          <input
+            type="text"
+            class="form-control"
+            id="profundidad"
+            name="profundidad"
+            [(ngModel)]="profundidad"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <label for="precio">Precio</label>
+          <input
+            type="number"
+            class="form-control"
+            id="precio"
+            name="precio"
+            [(ngModel)]="precio"
+            required
+          />
+        </div>
+        <div class="form-group mt-2">
+          <label for="nombre">Detalles</label>
+          <textarea
+            class="form-control"
+            id="mensaje"
+            name="mensaje"
+            rows="3"
+            [(ngModel)]="detalles"
+            required
+          ></textarea>
+        </div>
+        <div class="d-grid gap-2 mt-2">
+            <button
+            class="btn btn-success"
+            [disabled]="!f.valid"
+          >
+            Crear Producto
+          </button>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+<!-- <section id="cover">
+  <div id="cover-caption">
+    <div id="container" class="container">
+      <div class="row">
+        <div class="col-sm-10 offset-sm-1 text-center">
+          <h1 class="display-3">Welcome to Bootstrap 4</h1>
+          <div class="info-form">
+            <form action="" class="form-inline justify-content-center">
+              <div class="form-group">
+                <label class="sr-only">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Jane Doe"
+                />
+              </div>
+              <div class="form-group">
+                <label class="sr-only">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="jane.doe@example.com"
+                />
+              </div>
+              <button type="submit" class="btn btn-success">okay, go!</button>
+            </form>
+          </div>
+          <br />
+
+          <a
+            href="#nav-main"
+            class="btn btn-secondary-outline btn-sm"
+            role="button"
+            >↓</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ --><!--
 <div class="container">
     <div class="row mt-5">
         <div class="col-md-4 mx-auto">
@@ -38,9 +162,13 @@
                            id="file"
                            (change)="handleFileInput($event.target.files)">
                 </div>
-    
+                <div class="form-group">
                 <button class="btn btn-outline-success btn-block" [disabled]="!f.valid">Crear</button>
+                </div>
             </form>
         </div>
       </div>
 </div>
+
+
+-->
